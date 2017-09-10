@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.guido.robsmusicshop.MainActivity">
+
+
+        <ImageView
+            style="@style/guitar"
+            android:src="@drawable/guitar" />
+
+        <RelativeLayout
+            style="@style/Separator"
+            android:layout_width="match_parent">
+
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/secondTitle"
+                android:layout_marginTop="16dp"
+                android:text="@string/app_name" />
+
+            <TextView
+                style="@style/Subtitle"
+                android:layout_below="@+id/title"
+                android:text="@string/subTitle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+
+            <TextView
+                android:id="@+id/phoneTxt"
+                style="@style/InfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DefaultTextSize"
+                android:drawableLeft="@drawable/smartphone"
+                android:text="@string/phone" />
+
+            <TextView
+                android:id="@+id/mailTxt"
+                style="@style/InfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneTxt"
+                android:drawableLeft="@drawable/email"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/addressTxt"
+                style="@style/InfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mailTxt"
+                android:drawableLeft="@drawable/placeholder"
+                android:text="@string/addressText" />
+
+
+            <TextView
+                android:id="@+id/websiteTxt"
+                style="@style/InfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressTxt"
+                android:drawableLeft="@drawable/internet"
+                android:text="@string/website" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

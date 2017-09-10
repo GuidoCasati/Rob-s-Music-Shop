@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="activity_horizontal_margin">150dp</dimen>
+    <dimen name="activity_vertical_margin">160dp</dimen>
+    <dimen name="Pic">200dp</dimen>
+    <dimen name="separator">90dp</dimen>
+    <dimen name="titles">28dp</dimen>
+    <dimen name="DefaultTextSize">20dp</dimen>
+    <dimen name="subtitleSize">24sp</dimen>
+    <dimen name="drawablepadding">15dp</dimen>
+</resources>
